@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --border-radius: 5px;
+}
+
+.popup-container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+.popup-content {
+  border-radius: var(--border-radius);
+  background-color: #fff;
+  text-align: center;
+}
+
+.popup-image {
+  width: 100%;
+  height: 100%;
+  background-color: #f6716f;
+  background-image: url("https://hera.marketing/wp-content/uploads/2021/07/hera_popup_image.jpg");
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+.popup-text {
+  font-size: 1rem;
+  padding: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  /* font-weight: lighter; */
+}
+
+.popup-btn {
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  background-color: #f6716f;
+  border: none;
+  border-radius: var(--border-radius);
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.5;
+}
+
+.fas {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 320px) {
+  .popup-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius);
+  }
+}
+
+@media screen and (min-width: 736px) {
+  .popup-content {
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    border-radius: var(--border-radius);
+  }
+}
